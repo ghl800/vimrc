@@ -26,8 +26,32 @@ NeoBundle 'tpope/vim-fugitive'
 "NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 
+NeoBundle 'majutsushi/tagbar' " vimscripts-song tagbar
+
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+" vim 状态栏，显示编辑模式，文件名／类型，光标所在行列，所在位置
+NeoBundle 'bling/vim-airline'
+
+" 中文帮助文档（简体）
+NeoBundle 'foursking/vim-doc-cn'
+
+" 显示缩进对齐线
+NeoBundle 'Yggdroot/indentLine'
+
+"NeoBundle 'QFixToggle' " 1.0   Toggle the visibility of the quickfix window
+
+NeoBundle 'kien/rainbow_parentheses.vim' "高亮括号
+NeoBundle 'Raimondi/delimitMate' "括号自动补全
+NeoBundle 'scrooloose/nerdcommenter' "快捷注释
+NeoBundle 'SirVer/ultisnips' "代码片段
+NeoBundle 'scrooloose/syntastic' "语法自动分析
+
+NeoBundle 'bronson/vim-trailing-whitespace' "去行尾空格，将代码行最后无效的空格标红
+
+"NeoBundle 'ctrlp.vim' " 1.5   Fuzzy file, buffer, MRU, and tag finder with regexp support.
+
+NeoBundle 'fatih/vim-go' " Go development plugin for Vim
 
 NeoBundle 'Shougo/vimproc.vim', {
 			\ 'build' : {
@@ -45,7 +69,9 @@ NeoBundle 'taglist.vim' " 2.5   Source code browser (supports C/C++, java, perl,
 NeoBundle 'tpope/vim-abolish' " abolish.vim: easily search for, substitute, and abbreviate multiple variants of a word
 
 NeoBundle 'taglist-plus' " 1.0   Source code browser with awesome Javascript support
-
+NeoBundle 'a.vim' " 1.0   Alternate Files quickly (.c --> .h etc)
+NeoBundle 'AutoFenc.vim' " 1.0   Tries to automatically detect file encoding
+NeoBundle 'FencView.vim' " 1.0   Autodetect multiple encodings
 
 " Required:
 call neobundle#end()
@@ -89,4 +115,5 @@ syntax on
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-
+" set mapleader
+let mapleader = '\'
