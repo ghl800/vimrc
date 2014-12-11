@@ -18,6 +18,20 @@ NeoBundleLocal ~/.vim/bundle/mysetting
 " Add or remove your Bundles here:
 
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tsukkee/unite-tag' " tags soruce for unite.vim
+NeoBundle 'tsukkee/unite-help' " help source for unite.vim
+NeoBundle 'tacroe/unite-alias' " make an alias of a unite source with some args
+NeoBundle 'tacroe/unite-mark'
+NeoBundle 'h1mesuke/unite-outline' " outline source for unite.vim
+NeoBundle 'unite-colorscheme' " 1.0   A Unite.vim plugin for changing your colorscheme.
+NeoBundle 'vim-scripts/unite-font' " A Unite.vim plugin for changing your font.
+NeoBundle 'vim-scripts/unite-locate' " A Unite.vim plugin to find/open files easily, using locate command
+NeoBundle 'sgur/unite-everything' " A source which uses result of everything (http://www.voidtools.com/) for unite.vim
+NeoBundle 't9md/vim-unite-ack' " narrow the Ack result with unite.vim
+NeoBundle 'mattn/unite-gist' " unite source gist
+
+NeoBundle 'dyng/ctrlsf.vim' " An ack/ag powered code search and view tool, in an intuitive way with fairly more context.
+
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neomru.vim'
@@ -40,6 +54,7 @@ NeoBundle 'foursking/vim-doc-cn'
 NeoBundle 'Yggdroot/indentLine'
 
 "NeoBundle 'QFixToggle' " 1.0   Toggle the visibility of the quickfix window
+NeoBundle 'vim-scripts/quickfixsigns' " Mark quickfix & location list items with signs
 
 NeoBundle 'kien/rainbow_parentheses.vim' "高亮括号
 NeoBundle 'Raimondi/delimitMate' "括号自动补全
@@ -52,6 +67,7 @@ NeoBundle 'bronson/vim-trailing-whitespace' "去行尾空格，将代码行最�
 "NeoBundle 'ctrlp.vim' " 1.5   Fuzzy file, buffer, MRU, and tag finder with regexp support.
 
 NeoBundle 'fatih/vim-go' " Go development plugin for Vim
+NeoBundle 'ctags.vim' " 2.0   Display function name in the title bar and/or the status line
 
 NeoBundle 'Shougo/vimproc.vim', {
 			\ 'build' : {
@@ -72,6 +88,8 @@ NeoBundle 'taglist-plus' " 1.0   Source code browser with awesome Javascript sup
 NeoBundle 'a.vim' " 1.0   Alternate Files quickly (.c --> .h etc)
 NeoBundle 'AutoFenc.vim' " 1.0   Tries to automatically detect file encoding
 NeoBundle 'FencView.vim' " 1.0   Autodetect multiple encodings
+
+"NeoBundle 'rking/ag.vim' " The silver searcher
 
 " Required:
 call neobundle#end()
@@ -116,4 +134,4 @@ syntax on
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " set mapleader
-let mapleader = '\'
+let mapleader = ','
