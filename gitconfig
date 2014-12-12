@@ -1,0 +1,33 @@
+[user]
+	email = ghl800@gmail.com
+	name = Jerry Gu
+
+[alias]
+    ci = commit
+    co = checkout
+    cob = checkout -b
+    br = branch
+    m = merge
+    a = add
+    s = status
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    visual = !gitk
+    st = status -s
+    l = log --oneline --decorate -12 --color
+    ll = log --oneline --decorate --color
+    lc = log --graph --color
+    rb = rebase
+    dci = dcommit
+    sbi = submodule init
+    sbu = submodule update
+    sbp = submodule foreach git pull
+    sbc = submodule foreach git co master
+[merge]
+	tool = vimdiff
+[http]
+	cookiefile = /Users/jerry/.gitcookies
+[color]
+	ui = auto
+[core]
+	autocrlf = input
